@@ -1,0 +1,9 @@
+<div ng-if="comments.length > 0">
+    <br/>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="comment in comments">
+            <span class="badge">Upvotes: {{comment.upvotes}}</span>
+            <p><b>Comment # {{$index + 1}}:</b> {{comment.body}}</p>
+        </li>
+    </ul>
+</div>

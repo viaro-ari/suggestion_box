@@ -5,8 +5,10 @@ app.factory('suggestions', [function () {
                 title: 'Free pizza at club meetings',
                 upvotes: 15,
                 comments: [
-                    'Pizza is great!',
-                    'I Love Pizza!'
+                    {
+                        body: 'TESTING!',
+                        upvotes: 0
+                    }
                 ]
             },
             {

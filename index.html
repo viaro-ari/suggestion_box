@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="js/vendor/angular.min.js"></script>
-    <link src="https://code.angularjs.org/1.2.28/angular-route.min.js" type="text/javascript">
+    <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <meta charset="UTF-8">
@@ -12,7 +12,6 @@
     <div class="col-md-1"></div>
     <div class="main col-md-10">
         <div ng-view></div>
-    </div>
     <div class="col-md-1"></div>
 
     <!-- Modules -->
@@ -20,9 +19,15 @@
 
     <!-- Controllers -->
     <script src="js/controllers/HomeController.js"></script>
-    <script src="js/controllers/CommentController.js"></script>
+    <script src="js/controllers/SuggestionController.js"></script>
 
     <!-- Services -->
     <script src="js/services/suggestions.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/comments.js"></script>
+    <script src="js/directives/addSuggestion.js"></script>
+    <script src="js/directives/addComment.js"></script>
+    <script src="js/directives/toComments.js"></script>
 </body>
 </html>

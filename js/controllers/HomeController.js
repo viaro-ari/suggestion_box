@@ -1,7 +1,7 @@
 app.controller('HomeController', ['$scope', 'suggestions', function ($scope, suggestions) {
     $scope.posts = suggestions.posts;
     $scope.alert = '';
-    
+
     $scope.addSuggestion = function () {
         //If input is empty, don't submit
         if(!$scope.title || $scope.title === '') {

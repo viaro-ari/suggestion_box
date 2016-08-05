@@ -1,0 +1,21 @@
+<!-- Title -->
+<h2>{{post.title}} <span class="badge">Upvotes: {{post.upvotes}}</span></h2>
+
+<!-- New comment form -->
+<add-comment></add-comment>
+
+<!-- Comments -->
+<ul class="list-group">
+    <!-- Base information -->
+    <li href="#" class="list-group-item active">
+        <span class="badge">Total: {{post.comments.length}}</span>
+        Comments:
+    </li>
+
+    <!-- Comments -->
+    <li class="list-group-item" ng-repeat="comment in post.comments">
+        <span class="badge">Upvotes: {{comment.upvotes}}</span>
+        {{comment.body}}
+        <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)"></span>
+    </li>
+</ul>
